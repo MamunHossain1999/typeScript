@@ -15,8 +15,11 @@ const mentors : GenericArray<string> = ['m','n','d'];
 const boleArray : GenericArray<boolean> = [true, false, true];
 
 
-
-const user : GenericArray<{name:string, age:number}> = [
+type User ={
+    name: string;
+    age: number
+}
+const user : GenericArray<User> = [
     {
         name: 'mamun',
         age: 34,
@@ -37,6 +40,8 @@ add(30,34);  //optional
 type GenericTuple<x,y> = [x,y];
 
 const manush : GenericTuple<string, string> = ['mm','hd'];
+
+
 
 const UserWithId : GenericTuple<number,{name:string, email:string}> = [133, {name:'am', email:'m@gmail.com'}]
 
